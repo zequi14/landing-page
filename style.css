@@ -1,0 +1,87 @@
+
+        /* Variables de estilo */
+        :root {
+            --color-principal: #2196F3;
+            --color-fondo: #f5f5f5;
+            --fuente-principal: Arial, sans-serif;
+        }
+
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--fuente-principal);
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: var(--color-principal);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Sección principal */
+        .hero {
+            background-image: linear-gradient(to bottom, var(--color-principal), var(--color-fondo));
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #333;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Botón de llamada a la acción */
+        .btn {
+            background-color: var(--color-principal);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1976D2;
+        }
+
+        /* Sección de características */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .feature h3 {
+            color: var(--color-principal);
+            margin-bottom: 1rem;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
